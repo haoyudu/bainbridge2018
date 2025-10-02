@@ -1,4 +1,9 @@
-# Replication Project Template
+# PSYC 201A replication project
 
-This is a GitHub template to use for replications projects in PSYCH 201a at UCSD. Create a new repo using this as a template in order to use it.
+I don't know what to put in the readme for now. So I will just leave this here. 
+
+
+See the [replication report](writeup/bainbridge2019_replication_report.qmd) for details.
+
+Or view the [rendered notebook](writeup/bainbridge2019_replication_report.ipynb).
 
