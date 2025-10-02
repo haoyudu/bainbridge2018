@@ -1,0 +1,20 @@
+[workspace]
+authors = ["hdu <hdu@mit.edu>"]
+channels = ["conda-forge"]
+name = "bainbridge2019"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[dependencies]
+r-base = ">=4.5.1,<4.6"
+quarto = ">=1.8.25,<2"
+r-knitr = ">=1.50,<2"
+r-rmarkdown = ">=2.30,<3"
+python = ">=3.10"
+
+[tasks]
+preview = "quarto preview"
+render = "quarto render"
+convert = "quarto convert"
+preview-writeup = "quarto preview writeup/"
+render-writeup = "quarto render writeup/"

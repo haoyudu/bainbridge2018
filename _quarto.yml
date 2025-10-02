@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: _output
+  render:
+    - "*.qmd"
+
+
+execute:
+  freeze: auto  # Don't re-run code unless source changes
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    code-fold: false
+    number-sections: true
+  pdf:
+    documentclass: article
+    number-sections: true
+    

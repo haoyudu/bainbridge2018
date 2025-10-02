@@ -1,0 +1,108 @@
+---
+title: "Replication of Drawings of real-world scenes during free recall reveal detailed object and spatial information in memory by Bainbridge et al. (2019, Nature Communications)"
+author: "Haoyu Du (h6du)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+  html:
+    toc: true
+    toc_depth: 3
+---
+
+## Introduction
+
+
+### Justification for choice of study
+
+Bainbridge et al. (2019) uses a free recall drawing paradigm to investigate the diagnosticity of visual memory for static, real-world scenes. Their results show that participants’ drawings, both immediately and after a delay, could reliably capture object and spatial information.  The study is methodologically rigorous, incorporating drawing, memory, and rating tasks. while replicating the free drawing component is too resource-intensive, it is feasible and worthwhile to recruit new participants on Prolific to complete the recognizability rating task and/or the annotation task using the existing drawing dataset, allowing for an assessment of the robustness of the original main effect. Additionally, I plan to conduct a model-based analysis using vision-language models (e.g., CLIP or DeepMeaning) to provide a computational benchmark for alignment with human performance.
+
+### Anticipated challenges
+
+The replication will require the original stimulus set of 90 scene images (3 images per category) and the recall drawings produced by participants in the original study. The drawings are publicly available in the authors' Harvard Dataverse repository. The recognizability rating task will follow the original procedure: each drawing will be presented alongside three images from the same scene category (1 correct, 2 foils), and raters will judge which image the drawing depicts. To match the original design's statistical power, I will recruit participants through Prolific to provide 24 independent ratings per drawing. Based on the original study, where workers completed an average of 58.2 trials, I will structure the task so each participant rates approximately 50–60 drawings. The computational modeling component will involve extracting embeddings from the scene images and drawings using vision or vision-language models to assess whether model-based similarity metrics align with human recognizability judgments.
+
+There are several substantive challenges. First, obtaining the scene images from the authors is essential, as the specific image selection—controlled for memorability and low-level visual features—is critical to the design. Second, given the size of the dataset, it is difficult to estimate the cost. Assuming each trial takes 8–10 seconds, a 60-trial session would require 7–10 minutes per participant. In total, this could require 120 participants at $15/hour (estimated cost $300). To that end, a small pilot with n = 5–10 participants might be helpful in determining realistic time estimates. Third, the computational modeling approach is exploratory. Technical decisions about which model architecture to use, which layer embeddings to extract, and how to compute similarity metrics will need to be determined through preliminary testing.
+
+### Links
+
+[Project repository](https://github.com/haoyudu/bainbridge2018)
+
+Original paper: Bainbridge, W.A., Hall, E.H. & Baker, C.I. [Drawings of real-world scenes during free recall reveal detailed object and spatial information in memory.](https://github.com/haoyudu/bainbridge2018/blob/main/original_paper/bainbridge2018.pdf) Nat Commun 10, 5 (2019). 
+
+
+
+## Methods
+
+### Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+
+### Planned Sample
+
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+
+### Materials
+
+All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Procedure	
+
+Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+
+### Analysis Plan
+
+Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+
+**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+
+### Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+  Any differences from what was described as the original plan, or “none”.
+
+
+## Results
+
+
+### Data preparation
+
+Data preparation following the analysis plan.
+	
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Confirmatory analysis
+
+The analyses as specified in the analysis plan.  
+
+*Side-by-side graph with original graph is ideal here*
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).  
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
